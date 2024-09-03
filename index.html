@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHLC Phone Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Deborah Heart & Lung | Phone Directory</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" placeholder="Search contacts..." onkeyup="searchContacts()">
+
+        <div id="phoneBook">
+
+            <!-- Important Numbers -->
+            <div class="contact-group" data-group="Anesthesia">
+                <h2>Anesthesia</h2>
+                <ul>
+                    <li>Liu, Xin: <code>5718</code></li>
+                    <li>Muntazar, Muhammad: <code>5576</code></li>
+                    <li>Rianto, Achlina: <code>5573</code></li>
+                    <li>Safaryan, John: <code>5791</code></li>
+                    <li>Virella - Saenz, Diana: <code>5713</code></li>
+                    <li>Vuckovic, Dejon: <code>N/A</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Cardiology">
+                <h2>Cardiology</h2>
+                <ul>
+                    <li>Altimore, David: <code>5008, 5072</code></li>
+                    <li>Arkonac, Burak: <code>N/A</code></li>
+                    <li>Auxillary Staff: <code>LVAD, 5070</code></li>
+                    <li>Bademosi, Dianne: <code>N/A</code></li>
+                    <li>Balatsky, Igor: <code>5020, 5052</code></li>
+                    <li>Barn, Kulpreet: <code>5038</code></li>
+                    <li>Bullock - Palmer, R.: <code>5007, 5044</code></li>
+                    <li>Chen, Chunguang: <code>5111</code></li>
+                    <li>Corbisiero, R.: <code>5041</code></li>
+                    <li>Curtis, Tina, P.A.: <code>5041</code></li>
+                    <li>Damm, Donna, N.P.: <code>5044</code></li>
+                    <li>Decker, Amy: <code>4359</code></li>
+                    <li>Dias, Diane: <code>5853</code></li>
+                    <li>Dunford, Teresa: <code>5067</code></li>
+                    <li>Fish, Frank: <code>5067</code></li>
+                    <li>Ganguly, Tarun: <code>JBMDL, 609-836-6612</code></li>
+                    <li>Ghaly, Alan: <code>732-240-6688</code></li>
+                    <li>Guarino, Joseph: <code>732-240-6688</code></li>
+                    <li>Hurt, Elizabeth: <code>609-836-6602</code></li>
+                    <li>Ice, David: <code>5423</code></li>
+                    <li>Joiner, Jennifer: <code>5137</code></li>
+                    <li>Kazemian, Pedran: <code>5140</code></li>
+                    <li>Kelly, Lorraine: <code>N/A</code></li>
+                    <li>Kliwinski, Maureen, NP: <code>5034, 5139</code></li>
+                    <li>Kos, Cynthia: <code>5076</code></li>
+                    <li>Kovach, Richard: <code>5823</code></li>
+                    <li>Krathen, Courtney: <code>5108</code></li>
+                    <li>Krathen, Jonathan: <code>5101, 5109</code></li>
+                    <li>Lanigan, Kerry: <code>5034, 5046</code></li>
+                    <li>Ludwig, Kathy: <code>5659</code></li>
+                    <li>Maletzky, David: <code>5034, 5050</code></li>
+                    <li>Mosichyakov, Mark: <code>5007, 5069</code></li>
+                    <li>Muzaffar, Abroo: <code>5138</code></li>
+                    <li>Nevel, Evan: <code>5131</code></li>
+                    <li>Paone, Diana: <code>5100, 5111</code></li>
+                    <li>Patel, Jatin: <code>5035, 5082</code></li>
+                    <li>Patrick, Patti: <code>5101, 5071</code></li>
+                    <li>Poulathas, Alex: <code>5115, 5048</code></li>
+                    <li>Raza, Muhammad: <code>5032, 5044</code></li>
+                    <li>Sanghvi, Kintar: <code>5034, 609-759-9660</code></li>
+                    <li>Scordia, Pat: <code>4509, 5043</code></li>
+                    <li>Sena, Sumathisena: <code>8561, 609-836-6612</code></li>
+                    <li>Slegal, Scott: <code>609-836-6612, 5108</code></li>
+                    <li>Sirna, Sara: <code>5060, 5108</code></li>
+                    <li>Sandra Wiercinski: <code>5142</code></li>
+                    <li>Szawlewicz, Justin: <code>5021, 5147</code></li>
+                    <li>Unuigbe, Florence: <code>5115, 5147</code></li>
+                    <li>Vanhise, Aaron: <code>5035, 5082</code></li>
+                    <li>Youniss, Mohamed: <code>4509, 5025</code></li>
+                </ul>
+            </div>
+            
+            
+            <div class="contact-group" data-group="Diabetic Center">
+                <h2>Diabetic Center</h2>
+                <ul>
+                    <li>Office: <code>732-208-0232</code></li>
+                    <li>Jassil, Navinder: <code>8564/8566</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Employee Health">
+                <h2>Employee Health</h2>
+                <ul>
+                    <li>Gomez, Enid: <code>5305</code></li>
+                    <li>Foy, Liz: <code>4612</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Infectious Disease">
+                <h2>Infectious Disease</h2>
+                <ul>
+                    <li>Aboujaoude, Rania: <code>5305</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Medical Affairs">
+                <h2>Medical Affairs</h2>
+                <ul>
+                    <li>Kugelmass, Aaron: <code>5487</code></li>
+                    <li>Cornelius, Nicole: <code>5066</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Pathology">
+                <h2>Pathology</h2>
+                <ul>
+                    <li>Smith, Cheryl: <code>4663</code></li>
+                    <li>Simon, Paul: <code>4663</code></li>
+                    <li>Ragasa, Dante: <code>4663</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Pediatrics">
+                <h2>Pediatrics</h2>
+                <ul>
+                    <li>Abraham, Boban: <code>5385</code></li>
+                    <li>Garofalo, Cara: <code>4350</code></li>
+                    <li>Hack, Jennie: <code>4224</code></li>
+                    <li>Madan, Nandini: <code>4224</code></li>
+                    <li>Howard, Cindy: <code>N/A</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Pulmonary">
+                <h2>Pulmonary</h2>
+                <ul>
+                    <li>Frank, Marcella: <code>5706</code></li>
+                    <li>Khan, Zeeshan: <code>5705</code></li>
+                    <li>Martin, Andrew: <code>5707</code></li>
+                    <li>Waksman, Howard: <code>4396</code></li>
+                    <li>Grupico, Vivian: <code>5362</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Radiology">
+                <h2>Radiology</h2>
+                <ul>
+                    <li>Liem, Marina: <code>4691</code></li>
+                    <li>Qui, William: <code>4640</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Bariatric Surgery">
+                <h2>Bariatric Surgery</h2>
+                <ul>
+                    <li>Bilof, Michael: <code>4727</code></li>
+                    <li>Caromano, Michael P.A.: <code>4727</code></li>
+                    <li>Yurcisin, Basil: <code>4727</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Cardiac Surgery">
+                <h2>Cardiac Surgery</h2>
+                <ul>
+                    <li>Boris, Walter: <code>4789</code></li>
+                    <li>Costic, Joseph: <code>4354</code></li>
+                    <li>Dizon, Cherry: <code>4345</code></li>
+                    <li>Geller, Charles: <code>4345</code></li>
+                    <li>Gorechlad, John: <code>N/A</code></li>
+                    <li>Lee, Joseph: <code>4789</code></li>
+                    <li>Neary, Michael: <code>4634</code></li>
+                    <li>Ross, Ronald: <code>4692</code></li>
+                    <li>Johnson, David: <code>4359</code></li>
+                    <li>Sodi, Jitendra: <code>4357</code></li>
+                    <li>Stoll, Jonathan: <code>4788</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Vascular Surgery">
+                <h2>Vascular Surgery</h2>
+                <ul>
+                    <li>Albert, Alison L.P.N.: <code>4786</code></li>
+                    <li>Barnes, Tommy: <code>4785</code></li>
+                    <li>Domer, Gregory: <code>4790</code></li>
+                    <li>Herrington, James: <code>4791</code></li>
+                    <li>Kamath, Vijay: <code>4796</code></li>
+                    <li>Palamar, Catherine: <code>4797</code></li>
+                    <li>Safadjou, Saman: <code>4582</code></li>
+                </ul>
+            </div>
+            
+<!-- Secretaries -->
+<div class="contact-group" data-group="Secretaries">
+    <h2>Secretaries</h2>
+    <ul>
+        <li class="secretary">
+            <strong>Denise</strong> <code>5710</code>
+            <span>Anesthesia</span>
+        </li>
+        <li class="secretary">
+            <strong>Vanessa</strong> <code>4509</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Toni</strong> <code>5032</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Patty</strong> <code>5036</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Kylie</strong> <code>5141</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Lu</strong> <code>5141</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Brittany</strong> <code>5115</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Alicia</strong> <code>4353</code>
+            <span>Cardiac Surgery</span>
+        </li>
+        <li class="secretary">
+            <strong>Mia</strong> <code>5034</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Beth</strong> <code>5488</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Manahawkin</strong>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Toms River</strong>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Allison</strong> <code>5030</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Kristin</strong> <code>5101</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Jamie</strong> <code>5140</code>
+            <span>Cardiology, Bariatric Surgery</span>
+        </li>
+        <li class="secretary">
+            <strong>Kelly</strong> <code>5708</code>
+            <span>Pulmonary</span>
+        </li>
+        <li class="secretary">
+            <strong>Linda</strong> <code>4376</code>
+            <span>Radiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Theresa</strong> <code>5798</code>
+            <span>Cardiac Surgery</span>
+        </li>
+        <li class="secretary">
+            <strong>Jessica</strong> <code>5021</code>
+            <span>Cardiology</span>
+        </li>
+        <li class="secretary">
+            <strong>Karin</strong> <code>5060</code>
+            <span>Vascular Surgery</span>
+        </li>
+        <li class="secretary">
+            <strong>Nicole</strong> <code>4799</code>
+            <span>Vascular Surgery</span>
+        </li>
+        <li class="secretary">
+            <strong>Anita</strong> <code>5034</code>
+            <span>Cardiology</span>
+        </li>
+    </ul>
+</div>
+
+            
+            
+            <div class="contact-group" data-group="Departments">
+                <h2>Departments</h2>
+                <ul>
+                    <li>Admissions: <code>5628, 5767, 5330</code></li>
+                    <li>Anesthesia: <code>5710</code></li>
+                    <li>Biomed: <code>Randy - 4532, Gary - 4670, Dave - 4772</code></li>
+                    <li>Blood Bank: <code>4279, 4671</code></li>
+                    <li>Boiler Operator (Bob): <code>4322</code></li>
+                    <li>Case Management: <code>5259</code></li>
+                    <li>Case Management Stephanie: <code>5302</code></li>
+                    <li>Case Manager (MICU/SICU): <code>5602, 5603</code></li>
+                    <li>Chemistry: <code>4673</code></li>
+                    <li>Coags: <code>4271</code></li>
+                    <li>Anti Coag Nurse: <code>Angela Talpos - 5102</code></li>
+                    <li>Computers (IS): <code>4800</code></li>
+                    <li>CT: <code>4683</code></li>
+                    <li>CRNA: <code>5715</code></li>
+                    <li>CRNA (EPS): <code>5717</code></li>
+                    <li>CRNA (Tatiana): <code>5711</code></li>
+                    <li>CRNA EMERGENCY: <code>5709</code></li>
+                    <li>Decon: <code>4238</code></li>
+                    <li>Device Interrogations: <code>5135</code></li>
+                    <li>Dictation: <code>5385</code></li>
+                    <li>Dietary: <code>4313</code></li>
+                    <li>Education: <code>5645</code></li>
+                    <li>ECHO: <code>5528, 5395</code></li>
+                    <li>Employee Health: <code>4612, 4720</code></li>
+                    <li>EVS: <code>4491</code></li>
+                    <li>EVS (SICU): <code>Michael - #246</code></li>
+                    <li>Facilities/HVAC: <code>4470/4471</code></li>
+                    <li>Hemo: <code>4672</code></li>
+                    <li>Holter Monitor: <code>5133</code></li>
+                    <li>HR Liz Gibbons: <code>4641</code></li>
+                    <li>HR Mary Jones: <code>4281</code></li>
+                    <li>Information Desk: <code>4600, 4601</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Important Numbers">
+                <h2>Important Numbers</h2>
+                <ul>
+                    <li>Beeper Activation: <code>4560</code></li>
+                    <li>Centers Main Number: <code>609-893-6611</code></li>
+                    <li>Language Services: <code>855-350-7840</code></li>
+                    <li>Language Service Access Code: <code>8001390#</code></li>
+                    <li>Code Blue: <code>88 Code Blue</code></li>
+                    <li>Patient Room: <code>Dial 6 room bed</code></li>
+                    <li>Capital Health: <code>609-735-2950</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Outside Numbers">
+                <h2>Outside Numbers</h2>
+                <ul>
+                    <li>Biotronics 1: <code>800-547-0394</code></li>
+                    <li>Biotronics 2: <code>240-726-4053</code></li>
+                    <li>Boston Scientific: <code>800-227-3422</code></li>
+                    <li>Encompass (Toms River): <code>732-244-3100</code></li>
+                    <li>Endocrinology: <code>609-836-6613</code></li>
+                    <li>Gastroenterology: <code>609-265-1700</code></li>
+                    <li>Gift Of Life: <code>800-543-6391</code></li>
+                    <li>Hemo Nurse (Antoinette): <code>732-763-6512</code></li>
+                    <li>Medtronic: <code>800-328-2518</code></li>
+                    <li>Nephrology: <code>856-222-1975</code></li>
+                    <li>Neurology: <code>609-261-7600</code></li>
+                    <li>Palliative Care: <code>609-773-8300</code></li>
+                    <li>Palliative Care Nurse (Barbara): <code>609-284-5344</code></li>
+                    <li>TRICARE: <code>609-646-1002</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="Garden State Bariatric">
+                <h2>Garden State Bariatric</h2>
+                <ul>
+                    <li>Fax #: <code>973-629-1274</code></li>
+                    <li>Dr. Michael Bilof: <code>732-269-6800</code></li>
+                    <li>Dr. Basil Yurcisin Cell: <code>908-267-1612</code></li>
+                    <li>Michael Caramano (PA): <code>4366</code></li>
+                    <li>Nita: <code>4727</code></li>
+                    <li>Deborah Secretary: <code>4378, 4366</code></li>
+                </ul>
+            </div>
+            
+            <div class="contact-group" data-group="ACS AREAS">
+                <h2>ACS AREAS</h2>
+                <ul>
+                    <li>Balance Room: <code>1137, 4666</code></li>
+                    <li>Front Nurses Station: <code>1220, 4609/4610</code></li>
+                    <li>Endovascular RM: <code>1260, 4884/4867</code></li>
+                    <li>Area A: <code>1263, 4883/4865</code></li>
+                    <li>Area B: <code>1261, 4885/4855</code></li>
+                    <li>Area D: <code>1262, 4886/4864</code></li>
+                    <li>Cardiology Conf RM: <code>1240, 4858</code></li>
+                    <li>Vascular Room: <code>1270, 4889/4892</code></li>
+                    <li>TRIAGE: <code>1224, 4594</code></li>
+                    <li>ROOM #1: <code>1252, 4883</code></li>
+                    <li>ROOM #2: <code>1248, 4881</code></li>
+                    <li>ROOM #3: <code>1249, 4883</code></li>
+                    <li>ROOM #4: <code>1245, 4887</code></li>
+                    <li>ROOM #5: <code>1244, 4875</code></li>
+                    <li>ROOM #6: <code>1230, 4877</code></li>
+                    <li>ROOM #7: <code>1250, 4878</code></li>
+                    <li>ROOM #8: <code>1241, 4879</code></li>
+                    <li>ROOM #9: <code>1242, 4880</code></li>
+                    <li>ROOM #10: <code>1247, 4882</code></li>
+                    <li>ROOM #11: <code>1235, 4881</code></li>
+                    <li>ROOM #12: <code>1246, 4880</code></li>
+                    <li>ROOM #13: <code>1231, 4883</code></li>
+                    <li>ROOM #14: <code>1251, 4886</code></li>
+                    <li>ROOM #15: <code>1234, 4875</code></li>
+                    <li>ROOM #16: <code>1243, 4874</code></li>
+                    <li>ROOM #17: <code>1256, 4874</code></li>
+                    <li>ROOM #18: <code>1258, 4873</code></li>
+                    <li>ROOM #19: <code>1259, 4871</code></li>
+                    <li>ROOM #20: <code>1255, 4870</code></li>
+                    <li>ROOM #21: <code>1232, 4871</code></li>
+                    <li>ROOM #22: <code>1239, 4873</code></li>
+                    <li>ROOM #23: <code>1233, 4872</code></li>
+                    <li>ROOM #24: <code>1249, 4884</code></li>
+                    <li>ROOM #26: <code>1238, 4889</code></li>
+                    <li>ROOM #28: <code>1237, 4888</code></li>
+                    <li>PAT BURG: <code>1267, 4592</code></li>
+                    <li>PEDS ROOM #1: <code>1670, 4299/BPR 287</code></li>
+                    <li>PEDS ROOM #2: <code>1668, 5396</code></li>
+                    <li>PEDS SCREENING ROOM: <code>1668, 5386/5389</code></li>
+                    <li>SLEEP ROOM: <code>1318, 4330</code></li>
+                </ul>
+            </div>            
+    <script src="search.js"></script>
+</body>
+</html>
